@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:e_commerce_app/core/constant/constan_app.dart';
 import '../model/Category_model.dart';
 import '../model/SubCategory_model.dart';
 
@@ -26,14 +27,14 @@ class CategoryDataSource {
   }
   Future<List<SubCategory>> getubCategory(String categoryId) async {
     try {
-      final response = await dio.get("https://ecommerce.routemisr.com/api/v1/subcategories/?category=${categoryId}");
+      final response = await dio.get("${ConstantApp.domin}subcategories/?category=${categoryId}");
 
       if (response.statusCode == 200) {
         final List<dynamic> data = response.data['data'];
 
         // Convert JSON to List<Category>
         final subCategory = data.map((item) => SubCategory.fromjson(item)).toList();
-        print(subCategory);
+
 
         return subCategory; // Now returning a Future<List<Category>>
       } else {

@@ -16,7 +16,7 @@ class _SplashVeiwState extends State<SplashVeiw> {
   Widget build(BuildContext context) {
     setState(() {
       Timer(const Duration(seconds: 5), (){
-        Navigator.pushReplacementNamed(context, RouteName.Home_page);
+        Navigator.pushReplacementNamed(context, RouteName.Layout_Page);
       });
     });
     return Image.asset('assets/image/Splash Screen.png');

@@ -6,7 +6,7 @@ abstract class CategoryState {}
 class CategoryInitial extends CategoryState {}
 class CategoryLoading extends CategoryState {}
 class CategorySuccess extends CategoryState {
-  final List<Category> categories;
+   List<Category> categories;
   CategorySuccess(this.categories);
 }
 class CategoryFild extends CategoryState {
@@ -14,8 +14,7 @@ class CategoryFild extends CategoryState {
   CategoryFild(this.message);
 }
 
-class AuthFailure extends CategoryState {
-  final String message;
-  AuthFailure(this.message);
-}
+
+
+
 
