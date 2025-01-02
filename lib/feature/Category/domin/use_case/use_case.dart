@@ -1,7 +1,7 @@
-import 'package:e_commerce_app/feature/home/data/model/Category_model.dart';
-import 'package:e_commerce_app/feature/home/domin/repository/category_reapository.dart';
 
+import '../../data/model/Category_model.dart';
 import '../../data/model/SubCategory_model.dart';
+import '../repository/category_reapository.dart';
 
 
 class CategoryUseCase{

@@ -1,11 +1,10 @@
-
-import 'package:e_commerce_app/feature/home/domin/repository/category_reapository.dart';
+import 'package:e_commerce_app/feature/Category/domin/repository/category_reapository.dart';
 import '../data_sorce/data_source.dart';
 import '../model/Category_model.dart';
 import '../model/SubCategory_model.dart';
 
 class CategoryRepositoryImpl implements CategoryRepository {
-  final CategoryDataSource categoryDataSource;
+  late CategoryDataSource categoryDataSource;
   CategoryRepositoryImpl(this.categoryDataSource);
 
   @override

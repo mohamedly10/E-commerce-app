@@ -2,14 +2,14 @@ import 'package:e_commerce_app/core/route/route_name.dart';
 import 'package:e_commerce_app/feature/Product/presentiotion/page/Product_list.dart';
 import 'package:e_commerce_app/feature/auth/presentation/pages/login.dart';
 import 'package:e_commerce_app/feature/auth/presentation/pages/sign_up.dart';
-import 'package:e_commerce_app/feature/home/presentiotion/page/home.dart';
 import 'package:e_commerce_app/feature/splash/presentation/pages/splash_veiw.dart';
 import 'package:flutter/material.dart';
 
 import '../../feature/Acount/presentation/pages/Acount.dart';
+import '../../feature/Category/presentiotion/page/Category.dart';
+import '../../feature/Category/presentiotion/page/home.dart';
 import '../../feature/Favorites/presentiotion/page/Favorite.dart';
 import '../../feature/Product/presentiotion/page/product_details.dart';
-import '../../feature/home/presentiotion/page/Category.dart';
 import '../Layout/layout_page.dart';
 
 class  Routegenerator{
@@ -24,7 +24,7 @@ class  Routegenerator{
       case RouteName.Home_page:
         return MaterialPageRoute(builder: (context)=> const Home_page(),settings: setting);
       case RouteName.Category_page:
-        return MaterialPageRoute(builder: (context)=>   CategoryPage(),settings: setting);
+        return MaterialPageRoute(builder: (context)=>  const  CategoryPage(),settings: setting);
       case RouteName.Favorite_page:
         return MaterialPageRoute(builder: (context)=>  const Favorite_page(),settings: setting);
       case RouteName.Acount_page:

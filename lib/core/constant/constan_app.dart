@@ -1,5 +1,4 @@
-import 'package:flutter/cupertino.dart';
-
+import '../../feature/Category/data/model/Category_model.dart';
 class ConstantApp {
  static List<String> nav_icon_unselect=[
     'assets/image/icon/Nav_Bottom_bar/UnSelectHome.png',
@@ -13,6 +12,9 @@ class ConstantApp {
    'assets/image/icon/Nav_Bottom_bar/SelectFavorite.png',
    'assets/image/icon/Nav_Bottom_bar/SelectAcount.png',
  ];
+ static String domin ="https://ecommerce.routemisr.com/api/v1/";
 
- static String domin ="https://ecommerce.routemisr.com";
+
+ static late  List <Category> allCategory;
+ static  int?  indextheCategory;
 }
