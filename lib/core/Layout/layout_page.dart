@@ -35,8 +35,6 @@ class Layout_Page extends StatelessWidget {
             selectIndex = state.currentIndex;
           }
           var cubit= (context).read<NavigationCubit>();
-
-
           return Scaffold(
             backgroundColor: Colors.white,
             body: allPage[selectIndex],

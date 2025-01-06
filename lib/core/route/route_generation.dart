@@ -17,6 +17,7 @@ class  Routegenerator{
     switch (setting.name){
       case RouteName.SplashVeiw:
         return MaterialPageRoute(builder: (context)=> const SplashVeiw(),settings: setting);
+
       case RouteName.Sign_in:
         return MaterialPageRoute(builder: (context)=> const Sign_in(),settings: setting);
       case RouteName.Sign_Up:
